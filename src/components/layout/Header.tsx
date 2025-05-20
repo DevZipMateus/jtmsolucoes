@@ -63,7 +63,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="block">
-              <span className="font-display text-2xl font-bold text-blue-600">Contabilidade</span>
+              <img src="/lovable-uploads/029d2656-b096-4c78-8f31-062428a257e0.png" alt="JTM Soluções" className="h-10" />
             </a>
           </div>
 
@@ -79,8 +79,11 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <a href="#contact" className="ml-4 btn-primary">
-              Agende uma Consulta
+            <a 
+              href="tel:+5519996584233" 
+              className="ml-4 btn-primary"
+            >
+              (19) 99658-4233
             </a>
           </nav>
 
@@ -122,11 +125,10 @@ const Header = () => {
           ))}
           <div className="pt-2">
             <a
-              href="#contact"
+              href="tel:+5519996584233"
               className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
-              onClick={(e) => scrollToSection(e, '#contact')}
             >
-              Agende uma Consulta
+              (19) 99658-4233
             </a>
           </div>
         </div>

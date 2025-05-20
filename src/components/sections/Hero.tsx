@@ -1,7 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,10 +46,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full max-w-xs sm:max-w-sm mb-8"
         >
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
-            Escritório de Contabilidade
-          </div>
+          <img 
+            src="/lovable-uploads/029d2656-b096-4c78-8f31-062428a257e0.png" 
+            alt="JTM Soluções Logo" 
+            className="w-full"
+          />
         </motion.div>
 
         <motion.h1
@@ -59,8 +61,8 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Soluções Contábeis Personalizadas para o{' '}
-          <span className="text-gradient">Sucesso do Seu Negócio</span>
+          Soluções em{' '}
+          <span className="text-gradient">Elétrica e Hidráulica</span>
         </motion.h1>
 
         <motion.p
@@ -69,8 +71,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Combinamos experiência e tecnologia para oferecer serviços contábeis eficientes e
-          estratégicos, ajudando sua empresa a crescer e prosperar.
+          JTM Soluções: sua confiança é a energia que move nossas soluções.
         </motion.p>
 
         <motion.div
@@ -80,10 +81,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <a href="#contact" className="btn-primary">
-            Agende uma Consulta
+            Solicitar Orçamento
           </a>
           <a href="#services" className="btn-secondary">
-            Conheça Nossos Serviços
+            Nossos Serviços
           </a>
         </motion.div>
 

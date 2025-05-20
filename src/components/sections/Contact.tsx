@@ -35,7 +35,7 @@ const Contact = () => {
 
   const handleWhatsAppClick = () => {
     // Open WhatsApp with predefined message
-    window.open('https://wa.me/5521999999999?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20contábeis.', '_blank');
+    window.open('https://wa.me/5519996584233?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20JTM%20Soluções.', '_blank');
     
     // Show toast notification
     toast({
@@ -48,21 +48,21 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-blue-500" />,
       title: 'Telefone',
-      details: '(21) 99999-9999',
-      action: 'tel:+5521999999999',
+      details: '(19) 99658-4233',
+      action: 'tel:+5519996584233',
       actionText: 'Contato via Telefone'
     },
     {
       icon: <Mail className="h-6 w-6 text-blue-500" />,
       title: 'Email',
-      details: 'contato@contabilidade.com',
-      action: 'mailto:contato@contabilidade.com',
+      details: 'zezinho.jtm@gmail.com',
+      action: 'mailto:zezinho.jtm@gmail.com',
       actionText: 'Contato via Email'
     },
     {
       icon: <MapPin className="h-6 w-6 text-blue-500" />,
       title: 'Endereço',
-      details: 'Av. Presidente Vargas, 123, Centro, Rio de Janeiro - RJ',
+      details: 'ESCRITÓRIO',
       action: 'https://maps.google.com',
       actionText: 'Ver no Mapa'
     }
@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
           <h2 className="section-title text-3xl md:text-4xl font-bold mb-4">Entre em Contato Conosco</h2>
           <p className="section-subtitle text-slate-600">
-            Estamos prontos para atender às suas necessidades contábeis. Entre em contato 
+            Estamos prontos para atender às suas necessidades elétricas e hidráulicas. Entre em contato 
             através de um dos nossos canais de atendimento ou nos envie uma mensagem pelo WhatsApp.
           </p>
         </motion.div>
@@ -110,7 +110,7 @@ const Contact = () => {
               </Button>
               
               <div className="mt-8 text-center text-slate-500 text-sm">
-                Horário de atendimento: Segunda a Sexta, das 9h às 18h
+                Horário de atendimento: Segunda a Sexta, das 8h às 18h
               </div>
             </div>
           </motion.div>
@@ -142,17 +142,13 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 h-64 shadow-md">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2960758544593!2d-43.19234492359807!3d-22.903458836872207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5fd24e0bff%3A0x99447fc2399718e9!2sAv.%20Pres.%20Vargas%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1718121266831!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={false} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade" 
-                title="Mapa de localização"
-              ></iframe>
+            <div className="mt-10 p-6 bg-blue-50 rounded-lg">
+              <h4 className="text-xl font-semibold mb-4">JTM Soluções</h4>
+              <p className="text-slate-700">
+                Fundada em 2016, a JTM Soluções atua no mercado de elétrica e hidráulica, 
+                oferecendo serviço de qualidade com foco na satisfação dos nossos clientes. 
+                Com uma equipe experiente e qualificada, buscamos ser referência no setor.
+              </p>
             </div>
           </motion.div>
         </div>
