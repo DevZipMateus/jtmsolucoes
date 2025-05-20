@@ -1,5 +1,4 @@
-
-import { Mail, MapPin, Phone, WhatsApp } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -25,7 +24,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <WhatsApp size={18} />
+                <MessageCircle size={18} />
               </a>
             </div>
           </div>
