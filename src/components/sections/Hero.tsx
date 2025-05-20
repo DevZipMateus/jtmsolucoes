@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,12 +34,12 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-slate-50 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-[#2a4ea2] overflow-hidden"
       id="home"
     >
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-slate-50/95"></div>
-        <div className="absolute inset-0 opacity-40 bg-[url('/images/pattern.svg')] bg-repeat"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2a4ea2]/90 to-[#2a4ea2]/70"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('/images/pattern.svg')] bg-repeat"></div>
       </div>
 
       <div className="section-container relative z-10 flex flex-col items-center text-center">
@@ -56,7 +57,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -66,7 +67,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-slate-600 max-w-2xl mb-8"
+          className="text-lg md:text-xl text-white/90 max-w-2xl mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -80,12 +81,20 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <a href="#contact" className="btn-primary">
-            Solicitar Orçamento
-          </a>
-          <a href="#services" className="btn-secondary">
-            Nossos Serviços
-          </a>
+          <Button
+            variant="default"
+            className="bg-white hover:bg-white/90 text-[#2a4ea2] font-medium py-6 px-8 text-base"
+            asChild
+          >
+            <a href="#contact">Solicitar Orçamento</a>
+          </Button>
+          <Button
+            variant="outline"
+            className="border-white text-white hover:bg-white/10 py-6 px-8 text-base"
+            asChild
+          >
+            <a href="#services">Nossos Serviços</a>
+          </Button>
         </motion.div>
 
         <motion.div
@@ -94,10 +103,10 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center p-1">
-            <div className="w-1.5 h-3 bg-slate-400 rounded-full animate-bounce"></div>
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
+            <div className="w-1.5 h-3 bg-white rounded-full animate-bounce"></div>
           </div>
-          <span className="text-sm text-slate-500 mt-2">Role para baixo</span>
+          <span className="text-sm text-white/80 mt-2">Role para baixo</span>
         </motion.div>
       </div>
     </section>

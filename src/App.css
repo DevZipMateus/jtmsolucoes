@@ -9,7 +9,7 @@
 /* Base styles for the 60-30-10 rule */
 :root {
   --color-primary: #f8fafc; /* Slate 50 - 60% */
-  --color-secondary: #0070F0; /* Blue 500 - 30% */
+  --color-secondary: #2a4ea2; /* Logo blue - 30% */
   --color-accent: #0f172a; /* Slate 900 - 10% */
 }
 
