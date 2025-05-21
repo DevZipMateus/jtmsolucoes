@@ -90,7 +90,7 @@ const Hero = () => {
           </Button>
           <Button
             variant="outline"
-            className="border-white text-white hover:bg-white/10 py-6 px-8 text-base"
+            className="border-white text-black hover:bg-white/10 py-6 px-8 text-base"
             asChild
           >
             <a href="#services">Nossos Serviços</a>
