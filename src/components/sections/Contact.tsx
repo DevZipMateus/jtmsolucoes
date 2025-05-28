@@ -63,7 +63,7 @@ const Contact = () => {
       icon: <MapPin className="h-6 w-6 text-blue-500" />,
       title: 'Endereço',
       details: 'ESCRITÓRIO',
-      action: 'https://maps.google.com',
+      action: 'https://maps.app.goo.gl/47q6rf4WqF3vK8fU7',
       actionText: 'Ver no Mapa'
     }
   ];
@@ -133,6 +133,8 @@ const Contact = () => {
                     <p className="mt-1 text-slate-600">{item.details}</p>
                     <a 
                       href={item.action} 
+                      target={item.title === 'Endereço' ? '_blank' : undefined}
+                      rel={item.title === 'Endereço' ? 'noopener noreferrer' : undefined}
                       className="mt-2 inline-block text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline"
                     >
                       {item.actionText}

@@ -44,7 +44,14 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-300">ESCRITÓRIO</span>
+                <a 
+                  href="https://maps.app.goo.gl/47q6rf4WqF3vK8fU7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white transition-colors duration-200"
+                >
+                  ESCRITÓRIO
+                </a>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-blue-400 flex-shrink-0" />
