@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, Target, BarChart3 } from 'lucide-react';
+import { Zap, Target, Wrench } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,22 +31,22 @@ const About = () => {
 
   const features = [
     {
-      icon: <Users className="h-8 w-8 text-blue-500" />,
+      icon: <Zap className="h-8 w-8 text-blue-500" />,
       title: 'Missão',
       description:
-        'Fornecer serviços contábeis de alta qualidade que capacitem nossos clientes a tomar decisões financeiras informadas e estratégicas para o crescimento sustentável de seus negócios.',
+        'Fornecer soluções elétricas e hidráulicas de alta qualidade, garantindo segurança, eficiência e confiabilidade em todos os projetos que desenvolvemos para nossos clientes.',
     },
     {
       icon: <Target className="h-8 w-8 text-blue-500" />,
       title: 'Visão',
       description:
-        'Ser reconhecidos como referência em soluções contábeis inovadoras, construindo parcerias duradouras baseadas em confiança, excelência e resultados comprovados.',
+        'Ser reconhecida como referência em soluções elétricas e hidráulicas na região, construindo parcerias duradouras baseadas em confiança, qualidade técnica e excelência no atendimento.',
     },
     {
-      icon: <BarChart3 className="h-8 w-8 text-blue-500" />,
+      icon: <Wrench className="h-8 w-8 text-blue-500" />,
       title: 'Valores',
       description:
-        'Integridade, excelência, inovação, compromisso com o cliente e responsabilidade são os pilares que orientam todas as nossas ações e relacionamentos.',
+        'Segurança, qualidade, pontualidade, transparência e compromisso com o cliente são os pilares que orientam todas as nossas ações e projetos.',
     },
   ];
 
@@ -64,9 +64,9 @@ const About = () => {
           </div>
           <h2 className="section-title">Quem Somos</h2>
           <p className="section-subtitle">
-            Há mais de 15 anos no mercado, oferecemos soluções contábeis completas e personalizadas para empresas de
-            todos os portes e segmentos. Nossa equipe é formada por profissionais altamente qualificados e em constante
-            atualização.
+            A JTM Soluções Elétrica e Hidráulica é uma empresa especializada em projetos e execução de instalações 
+            elétricas e hidráulicas para empreendimentos residenciais e comerciais. Nossa equipe é formada por 
+            profissionais experientes e qualificados, comprometidos em entregar soluções técnicas de excelência.
           </p>
         </motion.div>
 
