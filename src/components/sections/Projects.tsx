@@ -68,7 +68,7 @@ const Projects = () => {
             </p>
             
             {/* Logos das empresas parceiras */}
-            <div className="flex items-center justify-center gap-8 mb-8">
+            <div className="flex items-center justify-center gap-8 mb-8 bg-[2#] bg-[#2a4ea2]">
               <div className="flex items-center gap-3">
                 <img alt="JTM Soluções" className="h-12 w-auto object-contain" src="/lovable-uploads/dda76e9b-15fe-413f-ad3f-221b5e078321.png" />
                 <span className="text-lg font-medium text-slate-700">+</span>
