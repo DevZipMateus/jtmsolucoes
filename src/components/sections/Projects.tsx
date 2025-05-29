@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +37,17 @@ const Projects = () => {
       description: 'Empreendimento residencial completo com instalações elétricas e hidráulicas de alta qualidade.',
       partner: 'Goulart Schio Engenharia',
       partnerLogo: '/lovable-uploads/2a9e75f0-adc7-4a6b-ad57-73cd83490636.png',
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop',
+      images: [
+        '/images/dji_01741.jpg',
+        '/images/dji_01691.jpg',
+        '/images/dji_0464.jpg',
+        '/images/dji_0534.jpg',
+        '/images/dji_0488.jpg',
+        '/images/dji_0457.jpg',
+        '/images/dji_0491.jpg',
+        '/images/dji_0048.jpg',
+        '/images/dji_0057.jpg'
+      ],
       category: 'Residencial',
       year: '2024'
     },
@@ -87,11 +98,29 @@ const Projects = () => {
             >
               <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 group">
                 <div className="relative">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  {project.images ? (
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.images.map((image, imageIndex) => (
+                          <CarouselItem key={imageIndex}>
+                            <img
+                              src={image}
+                              alt={`${project.title} - Imagem ${imageIndex + 1}`}
+                              className="w-full h-48 object-cover"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2" />
+                      <CarouselNext className="right-2" />
+                    </Carousel>
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                   <div className="absolute top-4 right-4">
                     <Badge variant="secondary" className="bg-white/90 text-slate-700">
                       {project.category}
