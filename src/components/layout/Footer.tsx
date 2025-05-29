@@ -1,3 +1,4 @@
+
 import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -35,6 +36,7 @@ const Footer = () => {
               <a href="#home" className="text-slate-300 hover:text-white transition-colors duration-200">Início</a>
               <a href="#about" className="text-slate-300 hover:text-white transition-colors duration-200">Sobre Nós</a>
               <a href="#services" className="text-slate-300 hover:text-white transition-colors duration-200">Serviços</a>
+              <a href="#projects" className="text-slate-300 hover:text-white transition-colors duration-200">Projetos</a>
               <a href="#contact" className="text-slate-300 hover:text-white transition-colors duration-200">Contato</a>
             </nav>
           </div>
